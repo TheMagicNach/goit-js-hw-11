@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body>
-  
-
-
+  <section class="form">
+    <form class="search-form" id="search-form">
+      <input
+        class="form-input"
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button class="form-button" type="submit" disabled>Search</button>
+    </form>
+  </section>
+<section class="gallery-section">
+  <ul class="gallery"></ul>
+  <div  class="loader" hidden>Loading</div>
+</section>
   <script src="./index.js" type="module"></script>
   </body>
 </html>
